@@ -1,5 +1,5 @@
 /**
- *    Copyright 2006-2018 the original author or authors.
+ *    Copyright 2006-2019 the original author or authors.
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -40,7 +40,7 @@ public class OutputUtilities {
     }
 
     /**
-     * Utility method that indents the buffer by the default amount for XML (two
+     * Utility method that indents the buffer by the default amount for XML (four
      * spaces per indent level).
      * 
      * @param sb
@@ -50,7 +50,7 @@ public class OutputUtilities {
      */
     public static void xmlIndent(StringBuilder sb, int indentLevel) {
         for (int i = 0; i < indentLevel; i++) {
-            sb.append("  "); //$NON-NLS-1$
+            sb.append("    "); //$NON-NLS-1$
         }
     }
 }
