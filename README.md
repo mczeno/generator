@@ -1,5 +1,9 @@
 修改↓
-- 自定义生成实体类添加 PO 后缀
+- 自定义生成实体类添加 PO 后缀 (RenameModelClassPlugin)
+    - 使用步骤：
+        1. 添加 jar
+        2. \<context> 添加 \<plugin type="org.mybatis.generator.plugins.RenameModelClassPlugin"/>
+        3. \<javaModelGenerator> 下添加 \<property name="modelSuffix" value="PO"/>
 
 MyBatis Generator (MBG)
 =======================
